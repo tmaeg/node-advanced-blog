@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>ログイン</title>
+    <%- include('./head') %>
+  </head>
+  <body>
+    <%- include('./header') %>
+    <main>
+      <div>
+        <h1>ログイン</h1>
+        <div class="login">
+          <form action="/user/login" method="POST">
+            <label for="email">Email</label>
+            <input id="email" name="email" required>
+            <label for="password">パスワード</label>
+            <input id="password" name="password" required>
+            <button type="submit">ログイン</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <%- include('./footer') %>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>ブログ投稿ページ</title>
+    <%- include('./head') %>
+  </head>
+  <body>
+    <%- include('./header') %>
+    <main>
+      <div class="blog-create">
+        <h1>記事を書く</h1>
+        <form action="/blog/create" method="POST">
+          タイトル：<input type="text" name="title">
+          要約：<input type="text" name="summary">
+          イメージ：<input type="text" name="image" placeholder="/img1.jpg">
+          本文：<textarea name="textBody" rows="15"></textarea>
+          <button type="submit">投稿</button>
+        </form>
+      </div>
+    </main>
+    <%- include('./footer') %>
+  </body>
+</html>
