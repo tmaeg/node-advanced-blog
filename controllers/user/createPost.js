@@ -5,7 +5,7 @@ module.exports = (req, res) => {
     if(err) {
       res.render('error', {message: 'ユーザー登録失敗'})
     } else {
-      res.send('/user/login')
+      res.redirect('/user/login')
     }
   })
 }
